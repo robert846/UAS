@@ -14,7 +14,7 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory(10)->create();
+        // User::factory(10)->create();
 
         // User::factory()->create([
         //     'name' => 'Test User',
@@ -25,12 +25,10 @@ class UserSeeder extends Seeder
         //     UserSeeder::class,
         // ]);
 
-        // User::factory()->create([
-        //     'name' => 'Robert',
-        //     'email' => 'ihermawan227@gmail.com',
-        //     'password' => Hash::make('12345678'),
-        //     'roles' => 'ADMIN',
-        //     'phone' => '085771737414',
-        // ]);
+        User::factory()->create([
+            'name' => 'Robert',
+            'email' => 'robertwirawan41@gmail.com',
+            'password' => Hash::make('12345678'),
+        ]);
     }
 }
