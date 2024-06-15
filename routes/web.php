@@ -6,10 +6,9 @@ Route::get('/', function () {
     return view('pages.auth.login');
 });
 
-// Route::get('/login', function () {
-//     return view('pages.auth.login');
-// });
-
-// Route::get('/user', function () {
-//     return view('pages.user.index.');
-// });
+Route::middleware(['auth'])->group(function () {
+    Route::get('home', function () {
+        return view('pages.dashboard');
+    })->name('home');
+    Route::resource('user', UserController::class);
+});
