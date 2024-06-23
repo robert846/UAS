@@ -22,6 +22,26 @@
                     </li>
                 </ul>
             </li>
-        </ul>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown"><i class="fas fa-dollar"></i><span>Master</span></a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="nav-link" href="{{ route('informasi_rekening.index') }}">informasi rekening</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown"><i class="fas fa-dollar"></i><span>Transfer dana</span></a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="nav-link" href="{{ route('daftar_transfer.index') }}">Daftar transfer</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="{{ route('transfer_dana.index') }}">Transfer dana</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </aside>
 </div>
